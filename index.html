@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!--тут не будет картинок, это не ошибка, просто искать картинки не хочется, и ссылки тоже никуда не ведут-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коммерческие проекты - Недвижимость в Ростове-на-Дону</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page">
+
+  <header class="header">
+  
+    <div class="header__logo">
+      <img src="logo.png" alt="Коммерческие проекты">
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+
+        <!-- В шапке главной странице можно навести на Услуги, 
+         кликнуть на Услуги или вариант из Услуг (Аренда, Покупка, Постройка, Подготовка проекта, Продать/сдать в аренду).
+         Вложенные варианты ведут на свои страницы соответствующей тематики -->
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Услуги</a>
+        <div class="nav__dropdown dropdown">
+          <a href="#" class="dropdown__link">Аренда</a>
+          <a href="#" class="dropdown__link">Покупка</a>
+          <a href="#" class="dropdown__link">Постройка</a>
+          <a href="#" class="dropdown__link">Подготовка проекта</a>
+          <a href="#" class="dropdown__link">Продать/сдать в аренду</a>
+        </div>
+        </li>
+
+        <!-- Тут из шапки можно перейти в наши проекты, вложенности нет, только в проекты -->
+        <li class="nav__item">
+          <a href="#" class="nav__link">Наши проекты</a>
+        </li>
+
+        <!-- Тут инфа о компании, вложенность есть, ну оно и понятно, просто смотри ниже -->
+        <li class="nav__item">
+          <a href="#" class="nav__link">О компании</a>
+        <div class="nav__dropdown dropdown">
+          <a href="#" class="dropdown__link">История</a>
+          <a href="#" class="dropdown__link">Команда</a>
+          <a href="#" class="dropdown__link">Лицензии</a>
+          <a href="#" class="dropdown__link">Реквизиты</a>
+          <a href="#" class="dropdown__link">Наш офис</a>
+        </div>
+        </li>
+
+        <!-- Все для клиентов, тоже есть вложенность -->
+        <li class="nav__item">
+          <a href="#" class="nav__link">Клиентам</a>
+        <div class="nav__dropdown dropdown">
+          <a href="#" class="dropdown__link">Акции</a>
+          <a href="#" class="dropdown__link">FAQ</a>
+        </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Контактный номерок (у меня хватит инфаркт, если на этом этапе у меня пропадет электричество, и это только шапка!!!!!) -->
+    <div class="header__contact">+7 (123) 456-78-90</div>
+  
+  </header>
+
+  
+  <main class="main">
+    <!-- Кто мы, что мы, чем дышим -->
+    <section class="hero">
+      <h1 class="hero__title">Проектирование, строительство, покупка, продажа, аренда коммерческой недвижимости в Ростове-на-Дону</h1>
+      <p class="hero__subtitle">Полный спектр услуг по проектированию и строительству зданий под ключ в Ростове-на-Дону. Адекватные цены. Современные решения.</p>
+    </section>
+
+    <!--Проекты, подпись под картинкой ведет на проект -->
+    <section class="projects">
+      <h2 class="projects__title">Наши проекты</h2>
+
+      <div class="projects__list">
+        <div class="projects__item project">
+          <img src="/api/placeholder/300/200" alt="Бизнес-центр 'Мурка'" class="project__image">
+          <a href="#" target="_blank" class="project__link">Бизнес-центр "Мурка"</a>
+        </div>
+
+        <div class="projects__item project">
+          <img src="/api/placeholder/300/200" alt="Офис на Садовой" class="project__image">
+          <a href="#" target="_blank" class="project__link">Офис на Садовой</a>
+        </div>
+
+        <div class="projects__item project">
+          <img src="/api/placeholder/300/200" alt="Кафе 'ВАРКА'" class="project__image">
+          <a href="#" target="_blank" class="project__link">Кафе "ВАРКА"</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Что можем сделать для клиента, наши основные услуги, без ссылок -->
+    <section class="services">
+      <h2 class="services__title">Что мы можем сделать для вас?</h2>
+      <div class="services__list">
+        <div class="services__item service">
+          <h3 class="service__title">Проектирование зданий</h3>
+          <p class="service__description">Наша команда опытных архитекторов и инженеров разработает уникальный проект, отвечающий всем вашим требованиям и учитывающий особенности участка и местные нормативы.</p>
+        </div>
+        <div class="services__item service">
+          <h3 class="service__title">Строительство зданий, осуществление ваших проектов</h3>
+          <p class="service__description">Мы воплотим в жизнь ваши идеи, используя современные технологии и качественные материалы. Наши строители гарантируют высокое качество исполнения и соблюдение сроков.</p>
+        </div>
+        <div class="services__item service">
+          <h3 class="service__title">Полное сопровождение при поиске аренды или покупки коммерческой недвижимости</h3>
+          <p class="service__description">Наши эксперты помогут вам найти идеальное помещение для вашего бизнеса, проведут анализ рынка и организуют просмотры наиболее подходящих объектов.</p>
+        </div>
+        <div class="services__item service">
+          <h3 class="service__title">Полное сопровождение при сдаче в аренду или продаже вашей коммерческой недвижимости</h3>
+          <p class="service__description">Мы возьмем на себя все заботы по поиску арендаторов или покупателей, проведем маркетинговую кампанию и обеспечим юридическое сопровождение сделки.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему нас выбирают, ни ссылки, ни картинки не кликабельны, загаловок2 , просто картинка/иконка, краткое описание -->
+    <section class="advantages">
+      <h2 class="advantages__title">Почему нас выбирают?</h2>
+      <p class="advantages__description">Мы ответственно подходим к любой задаче и доводим каждый проект до успешного завершения в установленный срок. Наша команда профессионалов гарантирует индивидуальный подход к каждому клиенту и высокое качество услуг на всех этапах работы.</p>
+      
+      <ul class="advantages__list">
+        <li class="advantages__item advantage">
+          <img src="/api/placeholder/200/200" alt="Реализация под ключ" class="advantage__image">
+          <span class="advantage__text">Реализовываем объекты "под ключ"</span>
+        </li>
+
+        <li class="advantages__item advantage">
+          <img src="/api/placeholder/200/200" alt="Полное сопровождение" class="advantage__image">
+          <span class="advantage__text">Полностью сопровождаем</span>
+        </li>
+
+        <li class="advantages__item advantage">
+          <img src="/api/placeholder/200/200" alt="Репутация" class="advantage__image">
+          <span class="advantage__text">Дорожим репутацией</span>
+        </li>
+
+        <li class="advantages__item advantage">
+          <img src="/api/placeholder/200/200" alt="Качество и сроки" class="advantage__image">
+          <span class="advantage__text">Делаем качественно и в установленный срок</span>
+        </li>
+
+      </ul>
+    </section>
+    
+    <!-- Контактная форма, имя+тел+почта+сообщение, позже доработать -->
+    <section class="contact-form">
+      <h2 class="contact-form__title">Оставить заявку</h2>
+      <p class="contact-form__description">Появился вопрос? Оставьте почту или номер - наш специалист поможет вам!</p>
+      <form class="contact-form__form form" action="/submit-form" method="post">
+        <label for="name" class="form__label">Имя</label>
+        <input id="name" type="text" class="form__input" placeholder="Имя" required>
+
+        <label for="phone" class="form__label">Номер телефона</label>
+        <input id="phone" type="tel" class="form__input" placeholder="Номер телефона" required>
+
+        <label for="message" class="form__label">Сообщение (при желании)</label>
+        <textarea id="message" class="form__textarea" placeholder="Сообщение (при желании)"></textarea>
+
+        <button type="submit" class="form__submit">Отправить заявку</button>
+      </form>
+      <p class="contact-form__privacy">Нажимая на кнопку отправить, вы соглашаетесь с <a href="#" class="contact-form__privacy-link">правилами обработки персональных данных</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p>&copy; 2024 Коммерческие проекты. Все права защищены.</p>
+    </div>
+    <div class="footer__contact">
+      <p>Адрес: г. Ростов-на-Дону, ул. Большая Садовая, д. 100</p>
+      <p>Телефон: +7 (123) 456-78-90 | Email: <a href="mailto:info@kommpromrnd.ru">info@kommpromrnd.ru</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
