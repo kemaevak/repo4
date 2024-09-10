@@ -1,0 +1,261 @@
+/* Основные стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: white; /* Белый фон для всех блоков, кроме футера и меню */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+  background-color: #607d8b;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+}
+
+.header__logo img {
+  width: 60px; /* Логотип увеличен в 2 раза */
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 80%; /* Шрифт уменьшен на 20% */
+  transition: background-color 0.3s ease;
+}
+
+.nav__link:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav__item:hover .nav__dropdown {
+  display: block;
+}
+
+.dropdown__link {
+  color: black;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdown__link:hover {
+  background-color: #607d8b;
+  color: white;
+}
+
+/* Контактный номер в шапке */
+.header__contact {
+  color: white;
+  font-size: 18px;
+}
+
+/* Главный контент */
+.hero {
+  background-color: white; /* Белый фон для блока hero */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 36px;
+  color: #333;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Проекты */
+.projects__title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project__image {
+  height: 200px;
+  object-fit: contain;
+}
+
+.project__link {
+  display: block;
+  color: #607d8b;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.project__link:hover {
+  color: black;
+}
+
+/* Услуги */
+.services__title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.service__item {
+  background-color: white; /* Белый фон для блока услуг */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.service__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service__description {
+  text-align: justify;
+  color: #555;
+}
+
+/* Преимущества */
+.advantages__title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.advantage__item {
+  text-align: center;
+}
+
+.advantage__image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Форма заявки */
+.contact-form {
+  background-color: white; /* Белый фон для формы */
+  color: black;
+  padding: 40px 20px;
+}
+
+.contact-form__title {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-form__description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__input, .form__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #607d8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: white;
+  color: #607d8b;
+  border: 1px solid #607d8b;
+}
+
+/* Подвал */
+.footer {
+  background-color: #607d8b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  text-decoration: underline;
+}
